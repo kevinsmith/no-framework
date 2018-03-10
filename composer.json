@@ -1,0 +1,18 @@
+{
+    "name": "kevinsmith/no-framework",
+    "description": "A sample PHP application bootstrapped without a framework.",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Kevin Smith",
+            "homepage": "https://kevinsmith.io"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ExampleApp\\": "src/"
+        }
+    }
+}

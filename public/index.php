@@ -1,3 +1,7 @@
 <?php
+declare(strict_types=1);
 
-echo 'Hello, world!';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$helloWorld = new \ExampleApp\HelloWorld();
+$helloWorld->announce();
