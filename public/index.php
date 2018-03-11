@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 use DI\ContainerBuilder;
 use ExampleApp\HelloWorld;
+use Relay\Relay;
+use Zend\Diactoros\ServerRequestFactory;
 use function DI\create;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -17,5 +19,8 @@ $containerBuilder->addDefinitions([
 /** @noinspection PhpUnhandledExceptionInspection */
 $container = $containerBuilder->build();
 
-$helloWorld = $container->get(HelloWorld::class);
-$helloWorld->announce();
+$middlewareQueue = [];
+
+/** @noinspection PhpUnhandledExceptionInspection */
+$requestHandler = new Relay($middlewareQueue);
+$requestHandler->handle(ServerRequestFactory::fromGlobals());

@@ -11,7 +11,9 @@
     ],
     "require": {
         "php": "7.1.*",
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^6.0",
+        "relay/relay": "2.x@dev",
+        "zendframework/zend-diactoros": "^1.7"
     },
     "autoload": {
         "psr-4": {
