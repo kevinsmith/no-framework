@@ -9,7 +9,9 @@
             "homepage": "https://kevinsmith.io"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "7.1.*"
+    },
     "autoload": {
         "psr-4": {
             "ExampleApp\\": "src/"
