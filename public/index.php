@@ -9,6 +9,7 @@ use Middlewares\RequestHandler;
 use Relay\Relay;
 use Zend\Diactoros\ServerRequestFactory;
 use function DI\create;
+use function DI\get;
 use function FastRoute\simpleDispatcher;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -18,6 +19,8 @@ $containerBuilder->useAutowiring(false);
 $containerBuilder->useAnnotations(false);
 $containerBuilder->addDefinitions([
     HelloWorld::class => create(HelloWorld::class)
+        ->constructor(get('Foo')),
+    'Foo' => 'bar'
 ]);
 
 /** @noinspection PhpUnhandledExceptionInspection */
@@ -28,7 +31,7 @@ $routes = simpleDispatcher(function (RouteCollector $r) {
 });
 
 $middlewareQueue[] = new FastRoute($routes);
-$middlewareQueue[] = new RequestHandler();
+$middlewareQueue[] = new RequestHandler($container);
 
 /** @noinspection PhpUnhandledExceptionInspection */
 $requestHandler = new Relay($middlewareQueue);
