@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace ExampleApp;
 
+use Psr\Http\Message\ResponseInterface;
+
 /**
  *
  *
@@ -10,20 +12,41 @@ namespace ExampleApp;
  */
 class HelloWorld
 {
-
     /**
      * @var string
      */
     private $foo;
+    /**
+     * @var ResponseInterface
+     */
+    private $response;
 
-    public function __construct(string $foo)
-    {
+    /**
+     * HelloWorld constructor.
+     *
+     * @param ResponseInterface $response
+     * @param string $foo
+     */
+    public function __construct(
+        string $foo,
+        ResponseInterface $response
+    ) {
         $this->foo = $foo;
+        $this->response = $response;
     }
 
-    public function __invoke(): void
+    /**
+     *
+     *
+     * @throws \RuntimeException
+     * @throws \InvalidArgumentException
+     */
+    public function __invoke(): ResponseInterface
     {
-        echo "Hello, {$this->foo} world!";
-        exit;
+        $response = $this->response->withHeader('Content-Type', 'text/html');
+        $response->getBody()
+            ->write("<html><head></head><body>Hello, {$this->foo} world!</body></html>");
+
+        return $this->response;
     }
 }

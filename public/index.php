@@ -7,6 +7,7 @@ use FastRoute\RouteCollector;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
 use Relay\Relay;
+use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequestFactory;
 use function DI\create;
 use function DI\get;
@@ -19,8 +20,11 @@ $containerBuilder->useAutowiring(false);
 $containerBuilder->useAnnotations(false);
 $containerBuilder->addDefinitions([
     HelloWorld::class => create(HelloWorld::class)
-        ->constructor(get('Foo')),
-    'Foo' => 'bar'
+        ->constructor(get('Foo'), get('Response')),
+    'Foo' => 'bar',
+    'Response' => function() {
+        return new Response();
+    },
 ]);
 
 /** @noinspection PhpUnhandledExceptionInspection */
