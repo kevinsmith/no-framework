@@ -1,6 +1,6 @@
 {
     "name": "kevinsmith/no-framework",
-    "description": "A sample PHP application bootstrapped without a framework.",
+    "description": "An example of a modern PHP application bootstrapped without a framework.",
     "type": "project",
     "license": "Apache-2.0",
     "authors": [
