@@ -1,4 +1,4 @@
-# Getting Started Without a PHP Framework
+# Example App: Modern PHP Without a Framework
 
 ## License
 
