@@ -14,7 +14,7 @@ use function DI\create;
 use function DI\get;
 use function FastRoute\simpleDispatcher;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $containerBuilder = new ContainerBuilder();
 $containerBuilder->useAutowiring(false);
