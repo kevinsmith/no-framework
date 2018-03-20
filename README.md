@@ -1,5 +1,7 @@
 # Example App: Modern PHP Without a Framework
 
+A fully-functional example app bootstrap built to accompany the [Modern PHP Without a Framework](https://kevinsmith.io/modern-php-without-a-framework) tutorial.
+
 ## License
 
 Copyright 2018 Kevin Smith
