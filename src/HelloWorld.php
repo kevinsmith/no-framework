@@ -47,6 +47,6 @@ class HelloWorld
         $response->getBody()
             ->write("<html><head></head><body>Hello, {$this->foo} world!</body></html>");
 
-        return $this->response;
+        return $response;
     }
 }
