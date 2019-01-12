@@ -13,9 +13,10 @@
         "php": "7.1.*",
         "php-di/php-di": "^6.0",
         "relay/relay": "2.x@dev",
-        "zendframework/zend-diactoros": "^1.7",
+        "zendframework/zend-diactoros": "^2.1",
         "middlewares/fast-route": "^1.0",
-        "middlewares/request-handler": "^1.1"
+        "middlewares/request-handler": "^1.1",
+        "narrowspark/http-emitter": "^0.7.0"
     },
     "autoload": {
         "psr-4": {
