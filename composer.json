@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "7.1.*",
+        "php": "7.2.*",
         "php-di/php-di": "^6.0",
         "relay/relay": "2.x@dev",
         "zendframework/zend-diactoros": "^2.1",
