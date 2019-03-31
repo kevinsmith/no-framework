@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "04208383047357de3f01c68115410422",
+    "content-hash": "8f98cc96ee5681baebdc7f813fbbf06e",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",
@@ -779,16 +779,16 @@
         },
         {
             "name": "relay/relay",
-            "version": "2.x-dev",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/relayphp/Relay.Relay.git",
-                "reference": "da12328890800cd12107bc95a775e61993fb438f"
+                "reference": "6a1c347c54f649ecaa438217e095868587e5ca05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/relayphp/Relay.Relay/zipball/da12328890800cd12107bc95a775e61993fb438f",
-                "reference": "da12328890800cd12107bc95a775e61993fb438f",
+                "url": "https://api.github.com/repos/relayphp/Relay.Relay/zipball/6a1c347c54f649ecaa438217e095868587e5ca05",
+                "reference": "6a1c347c54f649ecaa438217e095868587e5ca05",
                 "shasum": ""
             },
             "require": {
@@ -817,13 +817,14 @@
                     "homepage": "https://github.com/relayphp/Relay.Relay/contributors"
                 }
             ],
-            "description": "A PSR-7 middleware dispatcher.",
+            "description": "A PSR-15 server request handler.",
             "homepage": "https://github.com/relayphp/Relay.Relay",
             "keywords": [
                 "middleware",
+                "psr-15",
                 "psr-7"
             ],
-            "time": "2018-02-13T21:34:17+00:00"
+            "time": "2019-03-31T01:22:37+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1062,9 +1063,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "relay/relay": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
