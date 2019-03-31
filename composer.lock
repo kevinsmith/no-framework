@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f98cc96ee5681baebdc7f813fbbf06e",
+    "content-hash": "62fc4a42c838cfd2fdc47554862c891f",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",

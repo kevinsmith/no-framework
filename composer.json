@@ -11,16 +11,19 @@
     ],
     "require": {
         "php": "7.2.*",
-        "php-di/php-di": "^6.0",
-        "relay/relay": "^2.0",
-        "zendframework/zend-diactoros": "^2.1",
         "middlewares/fast-route": "^1.0",
         "middlewares/request-handler": "^1.1",
-        "narrowspark/http-emitter": "^0.7.0"
+        "narrowspark/http-emitter": "^0.7.0",
+        "php-di/php-di": "^6.0",
+        "relay/relay": "^2.0",
+        "zendframework/zend-diactoros": "^2.1"
     },
     "autoload": {
         "psr-4": {
             "ExampleApp\\": "src/"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
