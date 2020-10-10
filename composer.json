@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "7.2.*",
+        "php": "^7.2",
         "middlewares/fast-route": "^1.0",
         "middlewares/request-handler": "^1.1",
         "narrowspark/http-emitter": "^0.7.0",
