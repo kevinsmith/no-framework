@@ -24,8 +24,8 @@ class HelloWorld
     /**
      * HelloWorld constructor.
      *
-     * @param ResponseInterface $response
      * @param string $foo
+     * @param ResponseInterface $response
      */
     public function __construct(
         string $foo,
