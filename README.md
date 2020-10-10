@@ -2,6 +2,8 @@
 
 A fully-functional example app bootstrap built to accompany the [Modern PHP Without a Framework](https://kevinsmith.io/modern-php-without-a-framework) tutorial.
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kevinsmith/no-framework)
+
 ## License
 
 Copyright 2019 Kevin Smith
