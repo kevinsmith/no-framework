@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 use DI\ContainerBuilder;
 use ExampleApp\HelloWorld;
+use ExampleApp\MainPage;
 use FastRoute\RouteCollector;
 use Middlewares\FastRoute;
 use Middlewares\RequestHandler;
@@ -20,6 +21,8 @@ $containerBuilder = new ContainerBuilder();
 $containerBuilder->useAutowiring(false);
 $containerBuilder->useAnnotations(false);
 $containerBuilder->addDefinitions([
+    MainPage::class => create(MainPage::class)
+        ->constructor(get('Response')),
     HelloWorld::class => create(HelloWorld::class)
         ->constructor(get('Foo'), get('Response')),
     'Foo' => 'bar',
@@ -32,6 +35,7 @@ $containerBuilder->addDefinitions([
 $container = $containerBuilder->build();
 
 $routes = simpleDispatcher(function (RouteCollector $r) {
+    $r->get('/', MainPage::class);
     $r->get('/hello', HelloWorld::class);
 });
 
