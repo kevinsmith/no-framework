@@ -11,12 +11,12 @@
     ],
     "require": {
         "php": "^7.2",
-        "middlewares/fast-route": "^1.0",
-        "middlewares/request-handler": "^1.1",
-        "narrowspark/http-emitter": "^0.7.0",
-        "php-di/php-di": "^6.0",
-        "relay/relay": "^2.0",
-        "zendframework/zend-diactoros": "^2.1"
+        "laminas/laminas-diactoros": "^2.9",
+        "middlewares/fast-route": "^2.0",
+        "middlewares/request-handler": "^2.0",
+        "narrowspark/http-emitter": "^1.0",
+        "php-di/php-di": "^6.3",
+        "relay/relay": "^2.1"
     },
     "autoload": {
         "psr-4": {
