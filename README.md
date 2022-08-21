@@ -6,7 +6,7 @@ A fully-functional example app bootstrap built to accompany the [Modern PHP With
 
 ## License
 
-Copyright 2019 Kevin Smith
+Copyright 2022 Kevin Smith
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
