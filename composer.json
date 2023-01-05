@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "laminas/laminas-diactoros": "^2.9",
         "middlewares/fast-route": "^2.0",
         "middlewares/request-handler": "^2.0",
