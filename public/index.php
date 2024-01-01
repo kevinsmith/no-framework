@@ -19,7 +19,7 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $containerBuilder = new ContainerBuilder();
 $containerBuilder->useAutowiring(false);
-$containerBuilder->useAnnotations(false);
+$containerBuilder->useAttributes(false);
 $containerBuilder->addDefinitions([
     MainPage::class => create(MainPage::class)
         ->constructor(get('Response')),
